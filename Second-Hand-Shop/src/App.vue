@@ -1,19 +1,31 @@
 
 <script setup>
-  import headerComp from "./website_home_header/header.vue";
-  import mainComp from "./website_home_header/main_content.vue";
-  import footerComp from "./website_home_header/footer.vue";
+  import { RouterLink,RouterView } from "vue-router";
+  import headerComp from "./website_homepage/header.vue"; 
+  import mainComp from "./website_homepage/main_content.vue";
+  import footerComp from "./website_homepage/footer.vue";
+
+  
 </script>
 
 
 <template>
-  <headerComp></headerComp>
-  <mainComp></mainComp>
-  <footerComp></footerComp>
+  
+    <headerComp></headerComp>
+  
+    <mainComp></mainComp>
+    <footerComp></footerComp>
+  
+  <nav>
+    <RouterLink to="/Login">Login</RouterLink>
+  
+    <RouterView/>
+  </nav>
 </template>
 
 
 
 <style scoped>
-/* 這裡放置Header的CSS樣式 */
+
+
 </style>
