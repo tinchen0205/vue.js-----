@@ -11,7 +11,7 @@
         </a>-->
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-5 text-white">首頁</a></li>
+          <RouterLink to="/" class="nav-link px-5 text-white">首頁</RouterLink>
           <li><a href="#" class="nav-link px-3 text-white">分類</a></li>
           <li><a href="#" class="nav-link px-3 text-white"></a></li>
           <li><a href="#" class="nav-link px-3 text-white">關於我們</a></li>
@@ -22,7 +22,7 @@
         </form>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-3">登入</button>
+          <RouterLink to="/Login" class="btn btn-outline-light me-3">登入</RouterLink>
           <button type="button" class="btn btn-warning">註冊</button>
         </div>
       </div>
